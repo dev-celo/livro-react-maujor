@@ -4,6 +4,7 @@ import { TableFoot } from "./components/TableFoot";
 import { TableHead } from "./components/TableHead";
 import { TableBody } from "./components/TableBody";
 import './style.css';
+import { Logo } from "./components/Logo";
 
 function App() {
   const [booksInfo, setBooksInfo] = useState([]);
@@ -14,6 +15,9 @@ function App() {
 
   return (
     <>
+      <center>
+        <Logo />
+      </center>
       <InputTable setBooksInfo={ handleAddBooks } />
       <table className="tabela">
         <TableHead />
