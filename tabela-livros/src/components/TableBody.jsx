@@ -1,7 +1,7 @@
-export function TableBody({ booksInformation }) {
+export function TableBody({ booksInfo }) {
   return (
     <tbody>
-      {booksInformation.map((book, index) => (
+      {booksInfo.map((book, index) => (
         <tr key={book.id || index}>
           <td>{index + 1}</td>
           <td>{book.title}</td>

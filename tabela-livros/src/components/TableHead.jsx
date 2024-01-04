@@ -1,4 +1,4 @@
-export function tableHead() {
+export function TableHead() {
   <thead>
     <tr>
       <th colSpan="4">Tabela de Livros</th>

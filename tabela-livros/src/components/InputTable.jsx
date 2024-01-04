@@ -1,10 +1,8 @@
 import { useState } from "react";
-import { TableBody } from "./TableBody";
 
-export function InputTable() {
+export function InputTable({ setBooksInfo }) {
   const [nameBook, setNameBook] = useState('');
   const [authorBook, setAuthorBook] = useState('');
-  const [booksInfo, setBooksInfo] = useState([]);
 
   const setNewBook = () => {
     const newBook = {
@@ -14,7 +12,7 @@ export function InputTable() {
     }
 
     if(authorBook !== '' && nameBook !== '') {
-      setBooksInfo((prevBooks) => [...prevBooks, newBook]);
+      setBooksInfo(newBook);
     }
 
     setNameBook('');
@@ -44,7 +42,6 @@ export function InputTable() {
           Enviar
         </button>
       </form>
-      <TableBody booksInformation={booksInfo} />
     </>
   );
 }
