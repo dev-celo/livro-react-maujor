@@ -3,6 +3,7 @@ import { InputTable } from "./components/InputTable";
 import { TableFoot } from "./components/TableFoot";
 import { TableHead } from "./components/TableHead";
 import { TableBody } from "./components/TableBody";
+import './style.css';
 
 function App() {
   const [booksInfo, setBooksInfo] = useState([]);

@@ -3,7 +3,7 @@ export function TableBody({ booksInfo }) {
     <tbody>
       {booksInfo.map((book, index) => (
         <tr key={book.id || index}>
-          <td>{index + 1}</td>
+          <td>Livro {index + 1}</td>
           <td>{book.title}</td>
           <td>{book.author}</td>
           <td>
